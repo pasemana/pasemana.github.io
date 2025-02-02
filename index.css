@@ -29,11 +29,6 @@ body {
   width: 600px;
   height: 180px;
 }
-@media (max-width: 768px) {
-  .logo img {
-    width: 100%;
-  }
-}
 
 h1 {
   color: #000;
@@ -96,6 +91,20 @@ h1 {
   font-weight: 300;
   line-height: 2.5rem;
   letter-spacing: 0.05rem;
+}
+@media (max-width: 1024px) {
+  .main-container {
+    width: 100%;
+  }
+  .logo img {
+    border-radius: 32px;
+    width: 420px;
+    height: auto;
+  }
+  .benefit img {
+    width: 200px;
+    height: 200px;
+  }
 }
 @media (max-width: 767px) {
   body {
