@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P'A SEMANA</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const userLanguage = navigator.language || navigator.userLanguage;
+        console.log(userLanguage);
+      });
+    </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="languages">
+        <div class="language-selected">
+          <img src="images/portugal.png" />
+        </div>
+        <div class="language-not-selected">
+          <a href="en.html">
+            <img src="images/uk.png" />
+          </a>
+        </div>
+      </div>
+      <div class="top-container">
+        <div class="content-wrapper">
+          <header class="logo">
+            <img src="images/logo.png" alt="P'A Semana Logo" />
+          </header>
+          <h1>O seu guia de eventos <span>GRATUITO</span> para S/W Alentejo</h1>
+          <div class="mockup_mobile">
+            <img src="images/mobile.png" alt="Mobile App Preview" />
+          </div>
+          <p class="description">
+            Festas, festivais, mercados, concertos, espetáculos, atividades para
+            crianças, aulas, workshops, filmes, pop-ups de comida, eventos
+            holísticos e mais...
+          </p>
+          <div id="download-container" class="buttons"></div>
+        </div>
+        <div class="mockup">
+          <img src="images/mobile.png" alt="Mobile App Preview" />
+        </div>
+      </div>
+      <div class="benefits-container">
+        <div class="benefit">
+          <img src="images/list.png" alt="Benefit 1" />
+          <h2>Português / Inglês</h2>
+          <p>
+            Estamos a cobrir as cenas públicas e independentes em português e Em
+            inglês
+          </p>
+        </div>
+        <div class="benefit">
+          <img src="images/family.png" alt="Benefit 1" />
+          <h2>Fácil de usar</h2>
+          <p>
+            Descarregue a aplicação gratuita e tenha acesso imediato a todos os
+            eventos
+          </p>
+        </div>
+        <div class="benefit">
+          <img src="images/laptop.png" alt="Benefit 1" />
+          <h2>Para organizadores</h2>
+          <p>
+            Quer partilhar o seu evento na aplicação?
+            <a href="http://www.pasemana.pt">Clique aqui</a> e preencha o forma.
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <div>
+          Contate-nos:
+          <a href="mailto:contact@pasemana.pt">contact@pasemana.pt</a>
+        </div>
+        <div>
+          <a href="tcs_pt.html">Termo de Uso</a> •
+          <a href="privacy_pt.html">Política de Privacidade</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

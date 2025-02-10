@@ -4,68 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>P'A SEMANA</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="script.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const userLanguage = navigator.language || navigator.userLanguage;
-        console.log(userLanguage);
-      });
+      // Detect user's language
+      const userLang = navigator.language || navigator.userLanguage; // Fallback for older browsers
+
+      // Define the redirection logic
+      if (userLang.startsWith("pt")) {
+        window.location.href = "pt.html"; // Redirect to Portuguese page
+      } else {
+        window.location.href = "en.html"; // Redirect to English page
+      }
     </script>
   </head>
-  <body>
-    <div class="main-container">
-      <div class="top-container">
-        <div class="content-wrapper">
-          <header class="logo">
-            <img src="images/logo.png" alt="P'A Semana Logo" />
-          </header>
-          <h1>Your <span>FREE</span> events guide<br />for S/W Alentejo</h1>
-          <div class="mockup_mobile">
-            <img src="images/mobile.png" alt="Mobile App Preview" />
-          </div>
-          <p class="description">
-            Parties, festivals, markets, concerts, shows, children activities,
-            classes, workshops, movies, food pop-ups, holistic events, and
-            more...
-          </p>
-          <div id="download-container" class="buttons"></div>
-        </div>
-        <div class="mockup">
-          <img src="images/mobile.png" alt="Mobile App Preview" />
-        </div>
-      </div>
-      <div class="benefits-container">
-        <div class="benefit">
-          <img src="images/list.png" alt="Benefit 1" />
-          <h2>Portuguese / English</h2>
-          <p>
-            We're covering the public and independent scenes in Portuguese and
-            in English
-          </p>
-        </div>
-        <div class="benefit">
-          <img src="images/family.png" alt="Benefit 1" />
-          <h2>Easy to use</h2>
-          <p>Download the free app and have immediate access to all events</p>
-        </div>
-        <div class="benefit">
-          <img src="images/laptop.png" alt="Benefit 1" />
-          <h2>For organisers</h2>
-          <p>
-            Want to share your event in the app?
-            <a href="http://www.pasemana.pt">Click here</a> and fill out the
-            form.
-          </p>
-        </div>
-      </div>
-    </div>
-  </body>
+  <body></body>
 </html>
