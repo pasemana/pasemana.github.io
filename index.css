@@ -55,8 +55,8 @@ body {
 }
 .logo img {
   border-radius: 32px;
-  width: 600px;
-  height: 180px;
+  width: 550px;
+  /* height: 180px; */
 }
 
 h1 {
@@ -101,7 +101,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .benefit {
   display: flex;
