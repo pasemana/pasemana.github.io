@@ -68,6 +68,16 @@ h1 {
   line-height: 4rem;
   letter-spacing: 0.05rem;
 }
+.pt_web_title {
+  display:flex;
+}
+.pt_tablet_title {
+  display:none;
+}
+.pt_mobile_title {
+  display:none;
+}
+
 .description {
   color: #000;
   font-size: 1.4rem;
@@ -158,6 +168,15 @@ img {
     width: 200px;
     height: 200px;
   }
+  .pt_web_title {
+    display:none;
+  }
+  .pt_tablet_title {
+    display:block;
+  }
+  .pt_mobile_title {
+    display:none;
+  }
 }
 @media (max-width: 767px) {
   body {
@@ -226,6 +245,15 @@ img {
     line-height: 2rem;
     letter-spacing: 0rem;
     text-align: center;
+  }
+  .pt_web_title {
+    display:none;
+  }
+  .pt_tablet_title {
+    display:none;
+  }
+  .pt_mobile_title {
+    display:block;
   }
   .description {
     padding-left: 5px;
